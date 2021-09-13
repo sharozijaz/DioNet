@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DioNet-Internet Providing Service</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <link rel="stylesheet" href="./style/main.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <!-- Navigation Start -->
+      <nav class="navigation">
+        <img src="./images/logo.svg" alt="" id="logo" />
+        <ul class="navigation__links">
+          <li class="navigation__link">
+            <a href="#" class="navigation__link-active">Benefits</a>
+          </li>
+          <li class="navigation__link"><a href="#">About</a></li>
+          <li class="navigation__link"><a href="#">Testimonial</a></li>
+          <li class="navigation__link"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Navigation END -->
+      <!-- Hero Section Main -->
+      <div class="hero__main">
+        <div class="hero__main-text">
+          <p>Pakistan No.1 Internet Service</p>
+          <h1>Say Hello to Internet</h1>
+          <button class="hero__main-button">Learn More</button>
+        </div>
+        <div class="hero__main-image">
+          <img src="/images/map.svg" alt="" />
+        </div>
+      </div>
+      <div class="svg">
+        <svg
+          height="100%"
+          width="100%"
+          id="svg"
+          display="block"
+          viewBox="0 0 1440 400"
+          xmlns="http://www.w3.org/2000/svg"
+          class="transition duration-300 ease-in-out delay-150"
+        >
+          <path
+            d="M 0,400 C 0,400 0,200 0,200 C 48.30087969025793,214.02538100931883 96.60175938051586,228.05076201863767 138,232 C 179.39824061948414,235.94923798136233 213.8938421681945,229.82233293476818 247,225 C 280.1061578318055,220.17766706523182 311.82287194670613,216.65990624228965 355,210 C 398.17712805329387,203.34009375771035 452.81467004498097,193.5380420960732 495,195 C 537.185329955019,196.4619579039268 566.9184478733703,209.18792537341758 607,200 C 647.0815521266297,190.81207462658242 697.5115384615384,159.71025641025642 733,169 C 768.4884615384616,178.28974358974358 789.035398280476,227.97104898555673 824,225 C 858.964601719524,222.02895101444327 908.3468684165575,166.40554764751658 955,163 C 1001.6531315834425,159.59445235248342 1045.577128053294,208.406760424377 1087,221 C 1128.422871946706,233.593239575623 1167.3446193702669,209.96741065497542 1204,203 C 1240.6553806297331,196.03258934502458 1275.0443944656379,205.72359695572132 1314,208 C 1352.9556055343621,210.27640304427868 1396.477802767181,205.13820152213935 1440,200 C 1440,200 1440,400 1440,400 Z"
+            stroke="none"
+            stroke-width="0"
+            fill="white"
+            class="transition-all duration-300 ease-in-out delay-150"
+            transform="scaleY(1)"
+          ></path>
+        </svg>
+      </div>
+    </header>
+    <!-- Benefits Section -->
+    <section class="benfits">
+      <div class="benefits__text">
+        <p>Benefits</p>
+        <h2>We Provide Best Services</h2>
+      </div>
+      <div class="benefits__card">
+        <div class="benefits__card-fast benefits__card-hover">
+          <img src="./images/bolt.svg" alt="fast" />
+          <h2>Fast</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis
+            ad dolor rerum magnam, delectus natus.
+          </p>
+        </div>
+        <div class="benefits__card-reliable benefits__card-hover">
+          <img src="./images/heart.svg" alt="reliable" />
+          <h2>Reliable</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis
+            ad dolor rerum magnam, delectus natus.
+          </p>
+        </div>
+        <div class="benefits__card-support benefits__card-hover">
+          <img src="./images/support.svg" alt="support" />
+          <h2>Live Support</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis
+            ad dolor rerum magnam, delectus natus.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <section class="about">
+      <div class="about__image">
+        <img src="./images/team.svg" alt="team" />
+      </div>
+      <div class="about__container">
+        <div class="about__container-text">
+          <p id="about__heading-p">About</p>
+          <h2>It's all About you</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            enim quibusdam fugiat dolor! Debitis, illum sunt unde reprehenderit
+            placeat quia assumenda. Blanditiis consequuntur unde consequatur
+            officiis ipsum eius saepe sint.
+          </p>
+        </div>
+        <div class="about__table">
+          <div class="about__table-users">
+            <h3>500K</h3>
+            <p>Users</p>
+          </div>
+          <div class="about__table-reviews">
+            <h3>230K</h3>
+            <p>Reviews</p>
+          </div>
+          <div class="about__table-awards">
+            <h3>10</h3>
+            <p>Awards</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Reviews Section -->
+    <section class="reviews">
+      <div class="reviews__text">
+        <p>Testimonial</p>
+        <h2>Customers Feedback</h2>
+      </div>
+      <div class="reviews__cards">
+        <div class="reviews__card">
+          <img src="./images/user1.jpg" alt="user" />
+          <h4>Malik Ahmad</h4>
+          <div class="reviews__star">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </div>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
+            rem labore reiciendis perferendis dolorem fugit voluptatum sapiente
+            consectetur vero. Magnam numquam est enim assumenda dolore itaque
+            hic sequi magni fugiat?
+          </p>
+        </div>
+
+        <div class="reviews__card">
+          <img src="./images/user2.jpg" alt="user" />
+          <h4>Jane Doe</h4>
+          <div class="reviews__star">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </div>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
+            rem labore reiciendis perferendis dolorem fugit voluptatum sapiente
+            consectetur vero. Magnam numquam est enim assumenda dolore itaque
+            hic sequi magni fugiat?
+          </p>
+        </div>
+
+        <div class="reviews__card">
+          <img src="./images/user3.jpg" alt="user" />
+          <h4>Alicia Diaz</h4>
+          <div class="reviews__star">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </div>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
+            rem labore reiciendis perferendis dolorem fugit voluptatum sapiente
+            consectetur vero. Magnam numquam est enim assumenda dolore itaque
+            hic sequi magni fugiat?
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Form Section -->
+    <div class="reviews__text">
+      <p>Contact</p>
+      <h2>Contact Us for Customer Support</h2>
+    </div>
+    <section class="contact">
+      <div class="contact__form">
+        <form method="POST" class="contact__form">
+          <input type="text" placeholder="Name" class="contact__input" />
+          <input
+            type="mail"
+            placeholder="Email"
+            class="contact__input"
+            name="_replyto"
+          />
+          <textarea
+            name="message"
+            id=""
+            cols="0"
+            rows="10"
+            class="contact__input"
+          ></textarea>
+          <input type="submit" value="Send" class="contact__button" />
+        </form>
+      </div>
+      <div id="contact__map"></div>
+    </section>
+    <!-- Footer -->
+    <footer>
+      <div class="svg-footer">
+        <svg
+          height="100%"
+          width="100%"
+          id="svg"
+          display="block"
+          viewBox="0 0 1440 400"
+          xmlns="http://www.w3.org/2000/svg"
+          class="transition duration-300 ease-in-out delay-150"
+        >
+          <defs>
+            <linearGradient id="gradient">
+              <stop offset="5%" stop-color="#175bbc"></stop>
+              <stop offset="95%" stop-color="#3db2ff"></stop>
+            </linearGradient>
+          </defs>
+          <path
+            d="M 0,400 C 0,400 0,200 0,200 C 48.30087969025793,214.02538100931883 96.60175938051586,228.05076201863767 138,232 C 179.39824061948414,235.94923798136233 213.8938421681945,229.82233293476818 247,225 C 280.1061578318055,220.17766706523182 311.82287194670613,216.65990624228965 355,210 C 398.17712805329387,203.34009375771035 452.81467004498097,193.5380420960732 495,195 C 537.185329955019,196.4619579039268 566.9184478733703,209.18792537341758 607,200 C 647.0815521266297,190.81207462658242 697.5115384615384,159.71025641025642 733,169 C 768.4884615384616,178.28974358974358 789.035398280476,227.97104898555673 824,225 C 858.964601719524,222.02895101444327 908.3468684165575,166.40554764751658 955,163 C 1001.6531315834425,159.59445235248342 1045.577128053294,208.406760424377 1087,221 C 1128.422871946706,233.593239575623 1167.3446193702669,209.96741065497542 1204,203 C 1240.6553806297331,196.03258934502458 1275.0443944656379,205.72359695572132 1314,208 C 1352.9556055343621,210.27640304427868 1396.477802767181,205.13820152213935 1440,200 C 1440,200 1440,400 1440,400 Z"
+            stroke="none"
+            stroke-width="0"
+            fill="url(#gradient)"
+            class="transition-all duration-300 ease-in-out delay-150"
+            transform="scaleY(1)"
+          ></path>
+        </svg>
+      </div>
+      <div class="footer__logo">
+        <div class="footer__logo-c">
+          <img src="./images/logo.svg" alt="" />
+          <p>All Rights Reserved 2021</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="./script/app.js"></script>
+  </body>
+</html>
