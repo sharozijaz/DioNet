@@ -19,22 +19,45 @@
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
     />
-    <link rel="stylesheet" href="./style/main.css" />
+    <link rel="stylesheet" href="./scss/main.css" />
   </head>
   <body>
     <header class="hero">
       <!-- Navigation Start -->
-      <nav class="navigation">
+      <!-- <nav class="navigation">
         <img src="./images/logo.svg" alt="" id="logo" />
+        <a href="#" class="navigation__mobile">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
         <ul class="navigation__links">
-          <li class="navigation__link">
-            <a href="#" class="navigation__link-active">Benefits</a>
-          </li>
+          <li class="navigation__link"><a href="#">Benefits</a></li>
           <li class="navigation__link"><a href="#">About</a></li>
           <li class="navigation__link"><a href="#">Testimonial</a></li>
           <li class="navigation__link"><a href="#">Contact</a></li>
         </ul>
-      </nav>
+      </nav> -->
+      <div class="nav">
+        <input type="checkbox" id="nav-check" />
+        <div class="nav-header">
+          <img src="./images/logo.svg" alt="" id="logo" />
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+
+        <div class="nav-links">
+          <a href="#">Benefits</a>
+          <a href="#">About</a>
+          <a href="#">Testimonial</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
       <!-- Navigation END -->
       <!-- Hero Section Main -->
       <div class="hero__main">
@@ -69,13 +92,13 @@
       </div>
     </header>
     <!-- Benefits Section -->
-    <section class="benfits">
+    <section class="benefits">
       <div class="benefits__text">
         <p>Benefits</p>
         <h2>We Provide Best Services</h2>
       </div>
       <div class="benefits__card">
-        <div class="benefits__card-fast benefits__card-hover">
+        <div class="benefits__card-style benefits__card-hover">
           <img src="./images/bolt.svg" alt="fast" />
           <h2>Fast</h2>
           <p>
@@ -83,7 +106,7 @@
             ad dolor rerum magnam, delectus natus.
           </p>
         </div>
-        <div class="benefits__card-reliable benefits__card-hover">
+        <div class="benefits__card-style benefits__card-hover">
           <img src="./images/heart.svg" alt="reliable" />
           <h2>Reliable</h2>
           <p>
@@ -91,7 +114,7 @@
             ad dolor rerum magnam, delectus natus.
           </p>
         </div>
-        <div class="benefits__card-support benefits__card-hover">
+        <div class="benefits__card-style benefits__card-hover">
           <img src="./images/support.svg" alt="support" />
           <h2>Live Support</h2>
           <p>
@@ -110,7 +133,7 @@
         <div class="about__container-text">
           <p id="about__heading-p">About</p>
           <h2>It's all About you</h2>
-          <p>
+          <p class="about__heading-p2">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
             enim quibusdam fugiat dolor! Debitis, illum sunt unde reprehenderit
             placeat quia assumenda. Blanditiis consequuntur unde consequatur
